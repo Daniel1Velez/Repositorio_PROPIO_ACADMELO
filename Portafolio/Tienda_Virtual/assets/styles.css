@@ -8,3 +8,8 @@ img{
     display: block;
     width: 100%;
 }
+.Main-Header__Title{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
