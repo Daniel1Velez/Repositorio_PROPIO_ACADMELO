@@ -12,4 +12,26 @@ img{
     text-align: center;
     font-size: 2.5em;
     margin: 10px 0;
+    color: black;
+}
+.main-nav{
+    display: none;
+}
+.Main-Header__Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px black;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.Main-Header__btn{
+    display: block;
+    padding: 10px 25px;
+    color: black;
+    cursor: pointer;
 }
