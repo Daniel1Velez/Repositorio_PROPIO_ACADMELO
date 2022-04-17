@@ -29,3 +29,7 @@ function Prev(){
         slider.style.marginLeft = "-100%"
     }, 500)
 }
+
+btnRight.addEventListener('click',function(){
+    Next();
+})
