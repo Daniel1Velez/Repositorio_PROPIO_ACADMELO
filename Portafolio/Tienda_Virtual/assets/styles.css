@@ -17,12 +17,6 @@ body{
 *{
     box-sizing: border-box;
 }
-.logo{
-    display: block;
-    width: 10%;
-    height: 10%;
-    object-fit: cover
-}
 body{
     margin: 0;
     background-color: antiquewhite;
@@ -38,7 +32,7 @@ img{
     text-align: center;
     font-size: 2.5em;
     margin: 10px 0;
-    color: black;
+    color: wheat;
     font-family: "Main Title";
 }
 .Main-Header__Container{
@@ -47,13 +41,13 @@ img{
     align-items: center;
     width: auto;
     height: 100%;
+    background-color: #151515;
 }
-
-.Main-Header__btn{
+.logo{
     display: block;
-    padding: 10px 25px;
-    color: black;
-    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    object-fit: cover;
     position: relative;
 }
 .main{
@@ -64,11 +58,17 @@ img{
     margin: 100%;
 }
 /*Estilos de la Nav - Menu*/
+
+.btn-shop{
+    font-size: 4em;
+    display: block;
+    padding: 10px 1px;
+    cursor: pointer;
+}
 .btn-menu{
     font-size: 4em;
-    border: 1px black;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 1px;
     cursor: pointer;
 }
 .main-nav{
@@ -82,10 +82,11 @@ img{
     position: absolute;
     top: 100px;
     left: 0;
-    background: #555;
-    width: 100%;
+    background: #151515;
+    width: 20%;
+    height: auto;
     list-style: none;
-    padding: 2px;
+    padding: 4px;
     margin: 0;
     z-index: 999;
     opacity: 0;
@@ -93,22 +94,32 @@ img{
     transition: all 0.5s;
 }
 .menu__item{
-    padding: 20px;
     text-align: center;
-    width: 150px;
     margin: auto;
 }
 .menu__link{
+    padding: 10px;
     color: #fff;
     text-decoration: none;
     position: relative;
     display: block;
 }
+.menu__link:hover{
+    background: #fff;
+    color: #555;
+}
 .mostrar{
     opacity: 1;
     visibility: visible;
 }
-
+.icon-menu{
+    font-size: 1.5rem;
+    color: wheat;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 12px;
+}
 
 
 
@@ -225,6 +236,9 @@ img{
 .footer__copy{
     text-align: center;
     display: block;
+}
+.footer__link{
+    color: #fff;
 }
 
 /*Estilos*/
