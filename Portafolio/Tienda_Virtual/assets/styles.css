@@ -17,6 +17,12 @@ body{
 *{
     box-sizing: border-box;
 }
+.logo{
+    display: block;
+    width: 10%;
+    height: 10%;
+    object-fit: cover
+}
 body{
     margin: 0;
     background-color: antiquewhite;
@@ -32,7 +38,7 @@ img{
     text-align: center;
     font-size: 2.5em;
     margin: 10px 0;
-    color: black;
+    color: wheat;
     font-family: "Main Title";
 }
 .main-nav{
@@ -42,10 +48,11 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: gray;
 }
-.icon-menu{
+.btn-menu{
     font-size: 1.5em;
-    border: 1px black;
+    border: 1px wheat;
     display: block;
     padding: 10px 20px;
     cursor: pointer;
@@ -53,12 +60,16 @@ img{
 .Main-Header__btn{
     display: block;
     padding: 10px 25px;
-    color: black;
+    color: wheat;
     cursor: pointer;
     position: relative;
 }
 .main{
-    padding: 20px;
+    padding: 0 20px;
+}
+.Main-header__txt{
+    color: wheat;
+    margin: 100%;
 }
 
 /* Estilos para Slider */
@@ -113,30 +124,27 @@ img{
     text-align: center;
     background-color: black;
     color: wheat;
-    width: 100%;
+    width: auto;
 }
-.product-general{
-    display: grid;
+.container-products{
+    display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 100px;
+    grid-gap: 15px;
 }
-.product__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.product{
-    border: 2px solid black;
+.product {
+    border: 3.5px solid black;
+    padding: 20px;
     text-align: center;
-    background-color: white;
 }
+
 .product__tittle{
     text-align: center;
 }
 .product__price{
     color: black;
+    font-weight: bold;
 }
 .product__icon{
     display: block;
-    margin-top: 20px 0;
+    margin-top: 15px;
 }
