@@ -19,6 +19,7 @@ body{
 }
 body{
     margin: 0;
+    background-color: antiquewhite;
 }
 img{
     display: block;
@@ -54,6 +55,7 @@ img{
     padding: 10px 25px;
     color: black;
     cursor: pointer;
+    position: relative;
 }
 .main{
     padding: 20px;
@@ -106,13 +108,35 @@ img{
 }
 
 /* Estilos para los productos */
-.container-products{
+
+.main-title{
+    text-align: center;
+    background-color: black;
+    color: wheat;
+    width: 100%;
+}
+.product-general{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 100px;
 }
-
+.product__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .product{
-    border: 1px solid black;
-    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+}
+.product__tittle{
+    text-align: center;
+}
+.product__price{
+    color: black;
+}
+.product__icon{
+    display: block;
+    margin-top: 20px 0;
 }
