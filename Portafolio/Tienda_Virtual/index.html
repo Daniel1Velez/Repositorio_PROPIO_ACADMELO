@@ -12,34 +12,23 @@
 <body>
     <header class="Main-Header">
         <div class="Container Container--Flex">
-            
-            <div class="Main-Header__Container">
+            <div class="Main-Header__Container">   
+                <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
                 <img class="logo" src="./assets/Images/logo.jpg" alt="">
                 <h1 class="Main-Header__Title">Los Mejores Accesorios 4x4</h1>
                 <div class="Main-Header__Container" >
-                    <a href="" class="Main-Header__btn"><i class="fa-solid fa-bag-shopping"></i></a> 
-                    <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
+                    <a href="" class="Main-Header__btn"><i class="fa-solid fa-bag-shopping"></i></a>  
                 </div>
-                
-                
-                <nav class="main-nav" id="main-nav">
-                    <ul class="menu">
+                <nav class="main-nav">
+                    <ul class="menu" id="menu">
                         <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
                         <li class="menu__item"><a href="" class="menu__link">PRODUCTS</a></li>
                         <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
                     </ul>
                 </nav>
             </div>
-
-            <div class="Main-Header__Container">
-                <span class="Main-Header__txt">By: Daniel Velez Mejia</span>
-                <p class="Main-Header__txt">Email: danielvelez994@hotmail.com</p>
-            </div>
-
-    
         </div>
     </header>
-
     <div class="container-slider">
         <div class="slider" id="slider">
             <div class="slider__section">
@@ -67,8 +56,6 @@
         <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
         <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
     </div>
-
-    <script src="./Js/slider.js"></script>
 
     <main class="main">
         <div class="container">
@@ -109,7 +96,76 @@
             </section>
         </div>
     </main>
-
+    <footer class="footer section">
+        <div class="footer__container container grid">
+          <div class="footer__content">
+            <h3 class="footer__title">Our information</h3>
+    
+            <ul class="footer__list">
+              <li>Medellin - Colombia</li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <h3 class="footer__title">About Us</h3>
+    
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Support Center</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Customer Support</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Copy Right</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="footer__content">
+            <h3 class="footer__title">Product</h3>
+    
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Barra Antivuelco</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Defensas</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Escalones</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Luces</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="footer__content">
+            <h3 class="footer__title">Social</h3>
+    
+            <ul class="footer__social">
+              <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+    
+              <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+    
+              <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+    
+        <span class="footer__copy">&#169; Daniel Velez Mejia 2022. All Rights Reserved</span>
+      </footer>
+      <script src="./Js/slider.js"></script>
+      <script src="./Js/menu.js"></script>
 </body>
 </html>
 
