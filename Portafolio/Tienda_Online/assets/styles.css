@@ -472,10 +472,10 @@ button {
 }
 
 .products__price {
-  font-size: var(--h2-font-size);
+  font-size: var(--h4-font-size);
   display: flex;
   align-items: center;
-  gap: .25rem;
+  gap: .5rem;
 }
 
 .products__quantity {
@@ -484,7 +484,7 @@ button {
 }
 
 .products__name {
-  font-size: var(--normal-font-size);
+  font-size: var(--h2-font-size);
 }
 
 .products__button {
@@ -762,7 +762,7 @@ button {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
 @media screen and (max-width: 320px) {
   .container {
     margin-left: var(--mb-1);
@@ -797,7 +797,7 @@ button {
 }
 }
 
-/* For medium devices */
+
 @media screen and (min-width: 576px) {
   .home__img-bg {
     width: 340px;
@@ -922,7 +922,6 @@ button {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
@@ -931,4 +930,32 @@ button {
   .scrollup {
     right: 3rem;
   }
+}
+
+
+
+
+.cart{
+  width: 39px;
+  height: 38px;
+  /* cursor: pointer; */
+}
+.cart-products{
+  position: absolute!important;
+  top: 82px;
+  right: -18px;
+  background-color: #fff;
+  padding: 0 18px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  display: none;
+
+  min-width: 290px;
+}
+/* .cart:hover{
+  margin-bottom: 16px;
+  transition-duration: .5s;
+} */
+.cart:hover{
+  margin-bottom: 16px;
+  transition-duration: .5s;
 }
