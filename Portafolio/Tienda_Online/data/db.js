@@ -22,5 +22,13 @@ export const items = [
       image: 'assets/Images/Barra Antivuelco.jpg',
       category: 'roll cage',
       quantity: 6
+    },
+    {
+      id: 4,
+      name: 'Lights',
+      price: 1600.00,
+      image: 'assets/Images/Luces.jpg',
+      category: 'lights',
+      quantity: 4
     }
   ]
