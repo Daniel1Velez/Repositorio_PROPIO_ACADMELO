@@ -625,30 +625,30 @@ footer{
      
    }
   
-   .portada__contenedor-h3{ /*SOY*/
+   .portada__contenedor-h3{
       font-size: 50px;
       margin-right: 170px;
   }
   
-  .portada__contenedor-h1{ /*LUIS*/
+  .portada__contenedor-h1{
       border-top: 2px solid #ffffff;
       border-bottom: none;
       font-size: 150px;
       margin-left: 26px;
   }
   
-  .portada__contenedor-p{/*web developer*/
+  .portada__contenedor-p{
       padding-top: 10px;
       font-size: 45px;
       margin-left: 70px;
       min-width: 33%;
   }
   
-  .portada-izq__h3{ /*tiempo de experiencia*/
+  .portada-izq__h3{ 
       font-size: 45px; 
   }
   
-  .portada-izq__p{ /*experiencia*/
+  .portada-izq__p{ 
       font-size: 45px;
   }
   
@@ -722,7 +722,7 @@ footer{
       max-width: 800px;
   }
 
-  /* -------------------SERVICIOS------------------------ */
+  
 
   .servicios__h3{
       font-size: 50px;
@@ -754,7 +754,7 @@ footer{
       
   }
 
-  /* ----------------------HABIILIDADES--------------------- */
+  
   
   .porcentaje-web{
   
@@ -769,7 +769,7 @@ footer{
       
   }
 
-  /* -------------------PORTAFOLIO--------------------- */
+  
 
   .portafolio__h3{
       font-size: 50px;
@@ -785,7 +785,7 @@ footer{
       margin: 1rem;
   }
 
-  /* ---------------------------CONTACTO-------------------- */
+  
   
   .contacto__h3{
       font-size: 50px;
