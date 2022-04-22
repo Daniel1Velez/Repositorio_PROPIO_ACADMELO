@@ -1,250 +1,195 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DANIEL VELEZ MEJIA</title>
     <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
+<body>
+    <header>
+        <nav>
+           <input type="checkbox"  id="menu-ham">
+           <label for="menu-ham">
+               <img src="./assets/Íconos/menu 1.svg" alt="">
+           </label>
 
-<body class="hidden"> 
+           <ul>
+               <li>
+                   <a href="#portada">Home</a>
+               </li>
+               <li>
+                    <a href="#bio__titulo">Acerca de mi</a>
+               </li>
+               <li>                
+                   <a href="#servicios">Servicios</a>
+               </li>
+               <li>
+                   <a href="#habilidades">Mis habilidades</a>
+               </li>
+               <li>
+                   <a href="#portafolio">Mi portafolio</a>
+               </li>
+               <li>
+                   <a href="#contacto">Contacto</a>
+               </li>
+           </ul>
 
-    <header class="Main-Header">
-        <div class="Main-Header__Container--Flex">
-            <div class="Main-Header__Container">   
-                <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
-                <img class="logo" src="./assets/Images/logo.jpg" alt="">
-                <nav class="main-nav">
-                    <ul class="menu" id="menu">
-                        <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">PRODUCTS</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        
+        </nav>
     </header>
+
+
+    <section>
+         
+            <section id="portada" class="portada">
+                <div class="portada__contenedor">
+                    <h3 class="portada__contenedor-h3">Soy</h3>
+                    <h1 class="portada__contenedor-h1">Daniel</h1>
+                    <p class="portada__contenedor-p">Ingeniero Aeronautico, Desarrollador Web y Programador FullStack</p>
+                </div>
         
-        <div class="textos">
-         <h1>Daniel Rodriguez</h1>
-         <h2>Programador Full Stack</h2>
-        </div>
-    
-   </header>
-
-   <main>
-       <section class="about contenedor" id="Acercademi" >
-            <h3>Acerca de mi</h3>
-            <p class="after"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus omnis, reiciendis possimus beatae saepe laborum doloribus ipsum dicta ea est eligendi fugit quidem modi repudiandae consectetur excepturi assumenda, dolorum dolore.</p>
-
-            <div class="card">
-
-                <div class="content-card">
-
-                    <div class="people">
-                        <img src="assets/Logos-Imágenes/image 9.jpg" alt="">
-                    </div>
-
-                    <div class="texto about">
-                        <h4>uvm</h4>
-                        <h5>2010-2014</h5>
-
-                    </div>
-
-
-                </div>
-
-                <div class="content-card">
-
-                    <div class="people">
-                        <img src="assets/Logos-Imágenes/logo_academlo 5.jpg" alt=""  >
-                    </div>
-
-                    <div class="texto about">
-                        <h4>uvm</h4>
-                        <h5>2022-2023</h5>
-
-                    </div>
-
-
-                </div>
-            </div>
-       
-        </section>
-
-        <section class="recorrido" id="experiencia">
-
-            <div class="contenedor">
-                <h3>Experiencia</h3>
-                
-                <div class="experiencia">
-
-                     <div class="caja-experiencia">
-
-                        <div class="svg">
-
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="white" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M64.453 60.0703C64.1952 60 63.8827 60.0391 63.5233 60.1719C58.7108 62.375 54.0312 63.9453 49.4843 64.875C39.664 66.875 30.0937 65.8281 20.7812 61.7422C18.1952 60.6016 14.6015 58.6797 9.99993 55.961C9.88136 55.8674 9.73671 55.8128 9.58586 55.8047C9.42961 55.7969 9.2968 55.8125 9.1718 55.875C9.0468 55.9375 8.95305 56.0156 8.88274 56.1172C8.81243 56.2188 8.7968 56.3594 8.85149 56.5391C8.89836 56.711 9.01555 56.9063 9.21086 57.1172C10.0234 58.0703 11.0312 59.086 12.2265 60.1641C13.4218 61.2422 15.0077 62.461 16.9843 63.8203C18.9609 65.1797 21.0312 66.3906 23.1796 67.4453C25.3359 68.5 27.8359 69.3906 30.6874 70.1094C33.539 70.8281 36.3905 71.1875 39.2343 71.1875C42.0624 71.1875 44.8124 70.8985 47.4765 70.336C50.1483 69.7656 52.3983 69.0938 54.2343 68.3125C56.0624 67.5391 57.7499 66.6719 59.2968 65.7344C60.8436 64.7969 61.9843 64 62.7265 63.3672C63.4687 62.7266 63.9999 62.2266 64.3046 61.8516C64.664 61.4063 64.8436 61.0235 64.8436 60.6875C64.8515 60.336 64.7108 60.1328 64.453 60.0703V60.0703ZM41.203 27.1953C40.0155 27.2969 38.5858 27.5156 36.9062 27.8438C35.2265 28.1641 33.6718 28.5703 32.2343 29.0469C30.7968 29.5234 29.328 30.1875 27.8359 31.0313C26.3359 31.875 25.0624 32.8438 24.0077 33.9219C22.953 35 22.0937 36.3516 21.4218 37.9844C20.7499 39.6094 20.414 41.3984 20.414 43.3516C20.414 45.4688 20.7812 47.3516 21.5312 49.0156C22.2734 50.6797 23.2655 51.9844 24.5155 52.9531C25.7577 53.9219 27.1718 54.6797 28.7343 55.2344C30.2968 55.7891 31.953 56.0391 33.6718 55.9688C35.3905 55.8985 37.0702 55.6328 38.703 55.1641C40.328 54.7031 41.8593 53.961 43.2812 52.9531C44.703 51.9453 45.8671 50.75 46.7812 49.3828C47.1171 49.8984 47.414 50.2813 47.6796 50.5313L48.3593 51.2266C48.8124 51.6875 49.5077 52.3672 50.4452 53.2656C51.3749 54.1641 52.328 55.0391 53.2812 55.8985L61.4374 48.0938L60.9687 47.7109C60.6327 47.4531 60.2343 47.0859 59.7812 46.5938C59.328 46.1094 58.8749 45.5703 58.4374 44.9922C57.9921 44.4141 57.6093 43.7344 57.289 42.9688C56.9687 42.2031 56.8046 41.4609 56.8046 40.7422V20.2109C56.8046 19.4219 56.6562 18.5703 56.3593 17.6484C56.0546 16.7344 55.5233 15.7344 54.7421 14.6563C53.9608 13.5781 52.9921 12.6094 51.8358 11.7656C50.6718 10.9219 49.1249 10.2031 47.1796 9.625C45.2421 9.04687 43.0702 8.75781 40.6796 8.75781C38.2343 8.75781 35.9609 9.04688 33.8359 9.60938C31.7187 10.1797 29.9062 10.9375 28.3905 11.8906C26.8827 12.8438 25.5859 13.9453 24.5077 15.2031C23.4296 16.4609 22.6249 17.7734 22.1015 19.1406C21.578 20.5078 21.3124 21.8906 21.3124 23.2891L31.8749 24.2188C32.3046 22.9375 32.8827 21.8281 33.5937 20.875C34.3124 19.9219 34.9921 19.2344 35.6093 18.8047C36.2343 18.375 36.9062 18.0313 37.6171 17.7734C38.3359 17.5156 38.8202 17.3828 39.0702 17.3516C39.3202 17.3281 39.5155 17.3203 39.664 17.3203C41.7499 17.3203 43.1952 17.9375 44.0077 19.1641C44.5155 19.9063 44.7655 21.0313 44.7655 22.5469V26.9688C43.578 27.0156 42.3905 27.0938 41.203 27.1953V27.1953ZM44.7733 39.0625C44.7733 40.3594 44.6015 41.5391 44.2655 42.5781C43.5468 44.8516 42.1796 46.2813 40.1718 46.8594C38.4218 47.375 36.7577 47.1172 35.1796 46.0938C33.4999 45 32.664 43.4531 32.664 41.4609C32.664 39.9063 33.0546 38.5781 33.8359 37.4688C34.6171 36.3672 35.6562 35.5391 36.9609 34.9922C38.2655 34.4453 39.539 34.0547 40.789 33.8281C42.0312 33.5938 43.3671 33.4531 44.7733 33.4063V39.0625V39.0625ZM70.9608 56.1641C70.6249 55.7422 69.7186 55.4688 68.2343 55.3281C66.7499 55.1875 65.4608 55.1953 64.3515 55.3594C63.1561 55.5 61.9218 55.8438 60.6562 56.4063C59.3827 56.961 58.828 57.4297 58.9686 57.7969L59.0233 57.8985L59.0937 57.9531L59.203 57.9688H59.5624C59.6249 57.9688 59.703 57.961 59.8124 57.9531C59.9218 57.9453 60.0233 57.9297 60.1171 57.9219C60.2108 57.9141 60.3436 57.8985 60.5155 57.8906C60.6796 57.8828 60.8358 57.8594 60.9843 57.836C61.0077 57.836 61.2733 57.8125 61.789 57.7656C62.3046 57.7188 62.6796 57.6875 62.9061 57.6641C63.1327 57.6406 63.5155 57.6172 64.039 57.5938C64.5624 57.5703 64.9843 57.5703 65.2968 57.5938C65.6093 57.6172 65.9608 57.6485 66.3593 57.6797C66.7577 57.711 67.078 57.7813 67.328 57.8906C67.578 57.9922 67.7655 58.125 67.8827 58.2891C68.289 58.8047 68.2108 59.9453 67.6483 61.7188C67.0858 63.4922 66.5546 64.9063 66.0546 65.9531C65.8358 66.3985 65.8358 66.6719 66.0546 66.7891C66.2733 66.9063 66.578 66.7969 66.9843 66.4766C68.203 65.5235 69.2186 64.086 70.039 62.1563C70.5155 61.0156 70.8593 59.8281 71.0624 58.586C71.2499 57.3438 71.2186 56.5391 70.9608 56.1641V56.1641Z" fill="#242635"/>
-                            </svg>
-                        </div>  
-                        <div class="svg">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="#E5E5E5" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_57_836)">
-                                <path d="M39.9875 60.885C35.4825 55.235 32.84 50.285 31.9525 46.04C31.08 42.615 31.4175 39.88 32.93 37.825C34.5175 35.455 36.875 34.31 39.9875 34.31C43.1 34.31 45.47 35.455 47.0575 37.8525C48.5425 39.885 48.92 42.6175 48.0075 46.0675C47.03 50.39 44.3875 55.3375 39.9725 60.9125L39.9875 60.885ZM71.98 64.6875C71.3675 68.84 68.5425 72.2775 64.65 73.9575C57.15 77.225 49.715 72.0175 43.36 64.9475C53.8675 51.7825 55.82 41.535 51.3025 34.9075C48.66 31.105 44.8575 29.2575 39.9875 29.2575C30.1825 29.2575 24.7925 37.5525 26.915 47.1875C28.14 52.41 31.42 58.3325 36.6275 64.96C33.36 68.5675 30.26 71.145 27.525 72.7325C25.4025 73.8775 23.3725 74.5825 21.43 74.75C12.51 76.0775 5.505 67.4325 8.6825 58.5C9.125 57.34 10.01 55.2325 11.5075 51.9625L11.585 51.78C16.4675 41.195 22.3925 29.1625 29.19 15.8175L29.3725 15.375L31.3 11.665C32.81 8.91749 33.4225 7.69249 35.805 6.18249C36.965 5.49249 38.37 5.13999 39.9575 5.13999C43.135 5.13999 45.6075 6.98999 46.6775 8.48749C47.1975 9.28249 47.8225 10.35 48.6175 11.665L50.48 15.2975L50.74 15.8175C57.5375 29.165 63.475 41.17 68.33 51.78L68.4075 51.87L70.1925 55.9325L71.2475 58.485C72.055 60.5175 72.2375 62.5475 71.9625 64.67L71.98 64.6875ZM76.0425 56.7325C75.43 54.78 74.3625 52.4875 73.0475 49.7525V49.6475C66.7575 36.3 60.9125 24.295 55.365 13.515L55 12.98C51.0425 4.86749 48.215 -0.00251007 39.9875 -0.00251007C31.8625 -0.00251007 28.4125 5.64749 24.8825 12.9925L24.61 13.5275C19.05 24.295 13.2175 36.315 6.94 49.66V49.8425L5.0775 53.905C4.3875 55.585 4.0225 56.4575 3.9325 56.73C-0.572498 69.1 8.71 79.96 19.935 79.96C20.025 79.96 20.3775 79.96 20.8075 79.8825H22.0575C27.89 79.1675 33.8925 75.455 39.9875 68.8275C46.0825 75.455 52.11 79.165 57.93 79.8825H59.1675C59.61 79.96 59.9625 79.96 60.0525 79.96C71.2775 79.9725 80.5475 69.1 76.0425 56.73V56.7325Z" fill="#242635"/>
-                                 </g>
-                                 <defs>
-                                <clipPath id="clip0_57_836">
-                                <rect width="80" height="80" fill="#E5E5E5"/>
-                                </clipPath>
-                                </defs>
-                             </svg>
-                        </div>
-
-                        <div class="svg">
+                <div class="fondo">
+                    <div class="foto-personal">
+                        <div class="fondo-personal"></div>
+                        <img src="./assets/imagen perfil.png" alt="foto-perfil" class="foto-perfil">
                         
-                        
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M71.5199 33.8467C71.9299 36.0433 72.1533 38.34 72.1533 40.7367C72.1533 59.4833 59.6066 72.8133 40.6566 72.8133C36.3471 72.8146 32.0796 71.9668 28.0979 70.3182C24.1162 68.6697 20.4984 66.2527 17.4511 63.2055C14.4039 60.1582 11.9869 56.5404 10.3384 52.5587C8.68979 48.577 7.84195 44.3095 7.84326 40C7.84195 35.6905 8.68979 31.423 10.3384 27.4413C11.9869 23.4596 14.4039 19.8418 17.4511 16.7945C20.4984 13.7473 24.1162 11.3303 28.0979 9.68176C32.0796 8.0332 36.3471 7.18536 40.6566 7.18667C49.5166 7.18667 56.9199 10.4467 62.5999 15.74L53.3499 24.99V24.9667C49.9066 21.6867 45.5366 20.0033 40.6566 20.0033C29.8299 20.0033 21.0299 29.15 21.0299 39.98C21.0299 50.8067 29.8299 59.9733 40.6566 59.9733C50.4799 59.9733 57.1666 54.3567 58.5399 46.6433H40.6566V33.8467H71.5233H71.5199Z" fill="#242635"/>
-                            </svg>
-
-                        </div>
-
-                    </div>
-                
-
-                    <div class="caja-experiencia">
-
-                        
-                        <div class="content-info">
-                            <h4>Amazon</h4>
-                            <h5>UI designer</h5>
-                            <h6>2010-2020</h6>
-                        </div>
-
-                        <div class="content-info">
-
-                            <h4>Airbnb</h4>
-                            <h5>UI/UX designer</h5>
-                            <h6>2015-2016</h6>
-                        </div>
-
-                        <div class="content-info">
-
-                            <h4>Google</h4>
-                            <h5>Product designer</h5>
-                            <h6>2021-2022</h6>
-                        </div>
-
-                     </div>
-                     <div class="caja-experiencia">
-
-                        <div class="content-año">
-                            <h5>2 años</h5>
-                            
-                        </div>
-
-                        <div class="content-año">
-
-                            <h5>1 año</h5>
-                            
-                        </div>
-
-                        <div class="content-año">
-
-                            <h5>2 años</h5>
-                           
-                        </div>
-
-                        
-
-                         
-
-                    </div>
-
-                    <div class="caja-experiencia">
-
-                        <div class="content-barra">
-
-                            <svg width="11" height="306" viewBox="0 0 11 306" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.5 0V305.5" stroke="#F1A501" stroke-width="4"/>
-                                <rect y="5" width="11" height="10" fill="#F1A501"/>
-                                <rect y="122" width="11" height="10" fill="#F1A501"/>
-                                <rect y="239" width="11" height="10" fill="#F1A501"/>
-                            </svg>
-
-                        </div>
-
-
-
                     </div>
                 </div>
-
-
-            </div>
-
-        </section>
-
-        <section class="Contacto contenedor" id="contactos">
-
-            <h3>Contacto</h3>
-
-            <div class="card">
-                <div class="telefono">
-
-                    <div class="icono">
-                        <svg width="65" height="65" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M36.6669 28.2V33.2C36.6688 33.6642 36.5737 34.1236 36.3877 34.5489C36.2018 34.9742 35.929 35.356 35.587 35.6698C35.245 35.9836 34.8412 36.2225 34.4015 36.3712C33.9618 36.5199 33.4958 36.5751 33.0335 36.5333C27.9049 35.9761 22.9785 34.2236 18.6502 31.4167C14.6233 28.8578 11.2091 25.4436 8.65021 21.4167C5.83351 17.0687 4.08062 12.1183 3.53355 6.96666C3.4919 6.50577 3.54667 6.04126 3.69438 5.6027C3.84209 5.16414 4.0795 4.76114 4.39149 4.41936C4.70348 4.07758 5.08322 3.8045 5.50653 3.61753C5.92984 3.43055 6.38745 3.33376 6.85021 3.33332H11.8502C12.6591 3.32536 13.4432 3.61179 14.0565 4.13921C14.6698 4.66663 15.0703 5.39907 15.1835 6.19999C15.3946 7.8001 15.786 9.3712 16.3502 10.8833C16.5745 11.4799 16.623 12.1282 16.4901 12.7515C16.3571 13.3747 16.0483 13.9468 15.6002 14.4L13.4835 16.5167C15.8561 20.6892 19.311 24.1441 23.4835 26.5167L25.6002 24.4C26.0534 23.9519 26.6255 23.6431 27.2487 23.5101C27.872 23.3772 28.5203 23.4257 29.1169 23.65C30.629 24.2142 32.2001 24.6056 33.8002 24.8167C34.6098 24.9309 35.3492 25.3387 35.8778 25.9625C36.4063 26.5863 36.6872 27.3826 36.6669 28.2Z" fill="#F1A600"/>
-                         </svg>
-                    </div>
-                     <div class="texto about">
-                    
-                        <h5>Numero celular</h5>
-                        <h6>3112552089</h6>
-
-                     </div>
-                </div>
-
-                <div class="mail">
-
         
-                <svg width="65" height="65" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.66683 6.66666H33.3335C35.1668 6.66666 36.6668 8.16666 36.6668 9.99999V30C36.6668 31.8333 35.1668 33.3333 33.3335 33.3333H6.66683C4.8335 33.3333 3.3335 31.8333 3.3335 30V9.99999C3.3335 8.16666 4.8335 6.66666 6.66683 6.66666Z" fill="#F1A600" stroke="#262837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M36.6668 9.99999L20.0002 21.6667L3.3335 9.99999" fill="#F1A600"/>
-                    <path d="M36.6668 9.99999L20.0002 21.6667L3.3335 9.99999" stroke="#262837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                 </svg>
-
-                 <div class="texto about">
-                    
-                    <h5>Email</h5>
-                    <h6>danielrodriguezzdiazz@gmail.com</h6>
-
+                
+        
+                <div class="portada-izq">
+                    <h3 class="portada-izq__h3">3 años</h3>
+                    <p class="portada-izq__p">experiencia</p>
+        
+                    <div class="contenedor-iconos">
+                    <div class="contenedor-iconos__linkedin"><a href="https://www.linkedin.com/in/daniel-velez-090a44225" target="_blank"><img src="./assets/Íconos/cib_linkedin-in.svg" alt="logo-linkedin" ></a></div>
+                    <div class="contenedor-iconos__instagram"><a href="https://www.instagram.com/daniel_vekez/" target="_blank"><img src="./assets/Íconos/ant-design_instagram-filled.svg" alt="logo-instagram"></a></div>
+                    <div class="contenedor-iconos__twitter"><a href="https://twitter.com/?lang=es" target="_blank"><img src="./assets/Íconos/ant-design_twitter-outlined.svg" alt="logo-twitter"></a></div>
+                    </div>
                 </div>
-
-
-            </div>
-        </div>
-
-
-        </section>
-
-   </main>
-
-
-    <footer id="contacto">
-
-        <div class="footer contenedor">
-
-            
-            <p>La pasión e innovación es lo que nos distingue del resto</p>
-
-
+        
+            </section>
+        
            
 
 
-        </div>
-    </footer>
-    <script src="./js/menu.js"></script>
-</body>
+        
+    </section>
+ 
 
+    <section class="iconos-bottom">
+        
+        <div><img src="./assets/Logos- Imágenes/akar-icons_google-fill.png" alt=""></div>
+        <div><img src="./assets/Logos- Imágenes/ant-design_amazon-outlined.png" alt=""></div>
+        <div><img src="./assets/Logos- Imágenes/bi_spotify.png" alt=""></div>
+        
+     </section>
+
+    
+
+    <section class="bio">
+        <h3 id="bio__titulo" class="bio__titulo">Acerca de mi</h3>
+        <p class="bio__informacion">
+            Si pudiera poner en pocos renglones algo especifico que pueda llegar a llamarte la atencion de mi, realmente me seria
+            dificil captar tu atencion, porque como ambos somos un par de desconocidos, es realmente improbable que sepa como atraerte a mi,
+            lo curioso es que esa gran diferencia es lo que me permite decirte que soy el indicado para el proyecto que buscas completar,
+            ambos tenemos nuestra individualidad, pero es lo que nos hace diferentes y unicos, si decides conectarte conmigo, no solo tendrás
+            resultados increibles, sino que tambien podremos trabajar juntos para que esta experiencia laboral no sea tan breve y fugaz como todas.
+        </p>
+    </section>
+    
+    
+    <h3 id="servicios" class="servicios__h3">Servicios</h3>
+    
+    <section class="servicios">       
+     
+        <div class="servicios__icon-1">
+            <div class="vector"><img src="./assets/Vectores/Ellipse 14.svg" alt=""></div>
+            <img src="./assets/Íconos/iconoir_design-pencil.svg" alt="pencil" class="servicios__icon-1-pencil">
+            <h4 class="servicios__icon-1-h4">Web Desing</h4>
+            <p class="servicios__icon-1-p">Desde diseño hasta implementacion del desarrollo</p>
+        </div>
+        
+  
+        <div class="servicios__icon-2">
+            <div class="vector"><img src="./assets/Vectores/Ellipse 14.svg" alt=""></div>
+            <img src="./assets/Íconos/majesticons_speakerphone-line.svg" alt="" class="servicios__icon-2-marketing">
+            <h4 class="servicios__icon-2-h4">Marketing</h4>
+            <p class="servicios__icon-2-p">Desde diseño hasta implementacion del desarrollo</p>
+        </div>
+
+        <div class="servicios__icon-3">
+            <div class="vector"><img src="./assets/Vectores/Ellipse 14.svg" alt=""></div>
+            <img src="./assets/Íconos/feather_search.svg" alt='' class="servicios__icon-3-research">
+            <h4 class="servicios__icon-3-h4">Research</h4>
+            <p class="servicios__icon-3-p">Desde diseño hasta implementacion del desarrollo</p>
+
+        </div>
+     
+    </section>
+
+    <h3 id="habilidades" class="habilidades">Mis habilidades</h3>
+    <article class="barras">
+    
+        <article>
+            <span class="font-barras">Web design</span> <span class="porcentaje-web">80%</span> 
+            <div class="barra_webdesign"></div>
+        </article>
+
+        <article>
+            <span class="font-barras">Interaction design</span> <span class="porcentaje-interaction">95%</span> 
+            <div class="barra_interaction"></div>
+        </article>
+
+        <article>
+            <span class="font-barras">UX</span> <span class="porcentaje-ux">80%</span> 
+            <div class="barra_ux"></div>
+        </article>
+
+    </article>
+
+    <h3 id="portafolio" class="portafolio__h3">Mi Portafolio</h3>
+    <section class="portafolio">
+        <div><img src="./assets/Logos- Imágenes/Group 47.jpg" alt=""></div>
+        <div><img src="./assets/Logos- Imágenes/image 4.jpg" alt=""></div>
+        <div><img src="./assets/Logos- Imágenes/Rectangle 53.jpg" alt=""></div>
+        <div><img src="./assets/Logos- Imágenes/Rectangle 65.jpg" alt=""></div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h3 class="contacto__h3">Contacto</h3>
+        <div class="tarjeta-contacto">
+            <div class="contacto__contenedor">
+                <div class="vector-tarjeta"><img src="./assets/Vectores/Ellipse 14.svg" alt=""></div>
+                <img src="./assets/Íconos/phone 3.svg" alt="">
+                <h3 class="contacto__cellNumber">Numero de celular</h3>
+                <p>+57 300-5108637</p>
+
+            </div>
+        </div>
+        <div class="tarjeta-email">
+            <div class="contacto__contenedor">
+                <div class="vector-tarjeta"><img src="./assets/Vectores/Ellipse 14.svg" alt=""></div>
+                <img src="./assets/Íconos/mail 3.svg" alt="">
+                <h3 class="contacto__email">Email</h3>
+                <p> luishernandz2503@gmail.com</p>
+
+            </div>
+        </div>
+
+        <section class="cv">
+            <h3 class="cv-h3">Mi CV</h3>
+            <button class="cv-boton"><a href="https://drive.google.com/file/d/12xQj7ogkzHHJdE7oTpNROLpW1k9T7G6u/view?usp=sharing" target="_blank">Download</a></button>
+        </section>
+
+        <footer>
+            <p>&#169; Daniel Velez Mejia 2022. All Rights Reserved</p>
+        </footer>
+
+    </section>
+</body>
 </html>
