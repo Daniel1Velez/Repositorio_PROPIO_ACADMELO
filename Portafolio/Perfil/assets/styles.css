@@ -1,0 +1,311 @@
+
+:root{
+    --color1: #f1A600;
+    --color2: #1F1D2C;
+    --color3: #242635;
+    --color4: #E5E5E5;
+    --color5: #FFFFFF;
+    --titulos: 150px,--color5; 
+   
+   }
+   html {
+    scroll-behavior: smooth;
+  }
+   *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   
+   }
+   
+   body{
+     background-color:#1F1D2C;
+     font-family: "open sans";
+     
+   }
+   
+   img{
+   vertical-align: top;
+   background-color:#1F1D2C;
+   
+   }
+   
+   svg{
+     vertical-align: top;
+   }
+   
+   header{
+    width: 100%;
+    height: 600px;
+    
+   
+   
+   }
+   
+   .cont__nav{
+   
+     display: flex;
+     margin: auto;
+     width: 90%;
+     justify-content: flex-end;
+     align-items: center;
+     max-width:1000px;
+     height:inherit;
+     overflow: hidden;
+   }
+   
+   nav{
+     width: 100%;
+     position: fixed;
+     box-shadow: 0 0 10px 0 yellow;
+   }
+   
+   .nav1{
+   
+     background: transparent;
+     height: 80px;
+     color: #FFF;
+   
+   }
+   
+   .nav2{
+     background-color: #1F1D2C;
+     height:  100px;
+     color: #FFF;
+   
+   }
+   
+   nav .enlaces a{
+   
+     display: inline-block;
+     padding: 5px 0;
+     margin-right: 17px;
+     font-size: 17px;
+     font-weight: 300;
+     text-decoration: none;
+     border-bottom: 3px solid transparent;
+     color: inherit;
+   
+   }
+   
+   .logo, .logo img{height: 80px;}
+   
+   nav .enlaces a:hover{
+     border-bottom: 1px solid coral;
+     transition: 0.6s;
+   
+   }
+   
+   .icono{
+     
+     font-size: 24px;
+     padding: 23.5px 20px;
+     display: flex;
+     position:absolute;
+   
+   }
+   
+   .textos{
+   
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     color: #FFF;
+     overflow: hidden;
+     text-align: center;
+   
+   
+   }
+   
+   .textos>h1{font-size: 80px;;}
+   .textos>h2{font-size: 30px; font-weight: 300;}
+   
+   .contenedor{
+   
+     margin: auto;
+     padding: 60px 0;
+     width: 90%;
+     max-width: 1000px;
+     text-align: center;
+     overflow: hidden;
+     background-color: #1F1D2C;
+   
+   }
+   
+   .contenedor h3{
+     font-size: 33px;
+     color: #FFF;
+     margin-bottom: 10px;
+   }
+   
+   .contenedor h4{
+     font-size: 22px;
+     color: #FFF;
+     margin-bottom: 10px;
+   }
+   .contenedor h5{
+     font-size: 15px;
+     color: #FFF;
+     margin-bottom: 5px;
+     
+   }
+   
+   .contenedor h6{
+     font-size: 11px;
+     color: #FFF;
+     margin-bottom: 5px;
+     
+   }
+   .contenedor p{
+     font-size: 19px;
+     font-weight: 300;
+     color: #FFF;
+   
+   }
+   .caja-experiencia svg{
+      filter: invert(20%)
+   
+   
+   }
+   
+   
+   .after::after{
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 100 px;
+    height: 2px;
+   
+   
+   }
+   
+   .card{
+   
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+   }
+   
+   .content-card{
+    width: 50%;
+    
+    overflow: hidden;
+    height: 300px;
+   
+   
+   }
+   
+   .people{
+   
+     height: 80%;
+     background-color:#1F1D2C ;
+   
+   }
+   
+   .content-card svg{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   
+   
+   }
+   
+   .experiencia{
+   
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     text-align: center;
+     object-fit: cover;
+     margin: 15px;
+    
+   }
+   
+   .svg{
+   
+     padding: 20px 0;
+     justify-content: space-around;
+     flex-wrap: wrap;
+   
+     
+     margin: auto;
+     
+     overflow: hidden;
+    
+    
+   }
+   
+   .content-info{
+   
+     width: 80%;
+     margin: auto;
+     text-align:left;
+     
+     overflow: hidden;
+     padding: 20px 0;
+     
+   
+    }
+   
+   .content-año{
+     
+     overflow: hidden;
+     padding: 50px 0;
+     text-align:left;
+     margin: auto;
+     
+   
+   }
+   
+   .contenedor footer{
+     display: flex;
+     margin: auto;
+     justify-content: space-between;
+     width: 100%;
+   
+   
+   
+   }
+   
+   .lds-facebook {
+       display: inline-block;
+       position: relative;
+       width: 80px;
+       height: 80px;
+     }
+     .lds-facebook div {
+       display: inline-block;
+       position: absolute;
+       left: 8px;
+       width: 16px;
+       background: #dfc;
+       animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+     }
+     .lds-facebook div:nth-child(1) {
+       left: 8px;
+       animation-delay: -0.24s;
+     }
+     .lds-facebook div:nth-child(2) {
+       left: 32px;
+       animation-delay: -0.12s;
+     }
+     .lds-facebook div:nth-child(3) {
+       left: 56px;
+       animation-delay: 0;
+     }
+     @keyframes lds-facebook {
+       0% {
+         top: 8px;
+         height: 64px;
+       }
+       50%, 100% {
+         top: 24px;
+         height: 32px;
+       }
+     }
+     
+    
