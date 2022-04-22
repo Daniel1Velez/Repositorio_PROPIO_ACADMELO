@@ -2,41 +2,29 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Empezamos con el CSS</title>
+    <title>DANIEL VELEZ MEJIA</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body class="hidden"> 
 
-   <header>
-
-        <nav id="nav" class="nav1">
-            <div class="contener--nav">
-
-                
-
-                <div class="enlaces" id="enlaces">
-                    <a href="#" id="enlace-Home" class="btn-header">Home</a>
-                    <a href="#" id="enlace-Acercademi" class="btn-header">Acerca de mi</a>
-                    <a href="#" id="enlace-Experiencia" class="btn-header">Experiencia</a>
-                    <a href="#" id="enlace-Mishabilidades" class="btn-header">Mis habilidades</a>
-                    <a href="#" id="enlace-Contacto" class="btn-header">Mi Contacto</a>
-                
-                </div>
-
-                <div class="icono" id="open">
-
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-
-
-                </div>
+    <header class="Main-Header">
+        <div class="Main-Header__Container--Flex">
+            <div class="Main-Header__Container">   
+                <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
+                <img class="logo" src="./assets/Images/logo.jpg" alt="">
+                <nav class="main-nav">
+                    <ul class="menu" id="menu">
+                        <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">PRODUCTS</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+                    </ul>
+                </nav>
             </div>
-
-        </nav>
+        </div>
+        
+    </header>
         
         <div class="textos">
          <h1>Daniel Rodriguez</h1>
@@ -243,11 +231,6 @@
    </main>
 
 
-
-
-   <!-- <div class = "centrado" id="onload">
-    <div class="lds-facebook"><div></div><div></div><div></div></div>
-    </div> -->
     <footer id="contacto">
 
         <div class="footer contenedor">
@@ -260,13 +243,8 @@
 
 
         </div>
-
-        
-     
-
-
     </footer>
-
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
